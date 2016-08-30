@@ -1,15 +1,16 @@
-﻿namespace Advanced
+﻿using System;
+
+namespace Advanced
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var book = new Book();
+            var nullableType = new Nullable<int>();
 
-            var list = new GenericList<Book>();
-            list.Add(book);
+            Console.WriteLine(nullableType.GetValueOrDefault());
 
-          
+
         }
     }
 }
