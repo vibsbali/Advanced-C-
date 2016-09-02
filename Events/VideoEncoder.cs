@@ -3,17 +3,15 @@ using System.Threading;
 
 namespace Events
 {
-    internal class VideoEncoder
+    public class VideoEventArgs : EventArgs
     {
-        //Step 1 - Define a delegate
-        //Step 2 - Define an event based on that delegate
-        //Step 3 - Raise the event
+        public Video Video { get; set; }
+    }
 
-        //Step 1 - Define a delegate
-        public delegate void VideoEncodedEventHandler(object source, EventArgs args);
-
-        //Step 2 - Define an event based on that delegate
-        public event VideoEncodedEventHandler VideoEncoded;
+    public class VideoEncoder
+    {
+        //Step 1 - Define an event via EventHandler<T> delegate - The return type is void in events
+        public event EventHandler<VideoEventArgs> VideoEncoded;
 
         public void Encode(Video video)
         {
@@ -21,15 +19,15 @@ namespace Events
             Thread.Sleep(3000);
 
             //Step 3 - Raise the event
-            OnVideoEncoded();
+            OnVideoEncoded(video);
         }
 
 
-        protected virtual void OnVideoEncoded()
+        protected virtual void OnVideoEncoded(Video video)
         {
             if (VideoEncoded != null)
             {
-                VideoEncoded(this, EventArgs.Empty);
+                VideoEncoded(this, new VideoEventArgs { Video = video });
             }
         }
     }
