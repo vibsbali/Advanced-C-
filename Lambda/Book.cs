@@ -1,4 +1,4 @@
-namespace Advanced
+namespace Lambda
 {
     public class Book
     {
