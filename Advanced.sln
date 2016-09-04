@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "Extensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{93CE3986-CBA7-4A1D-BFE8-C6762014D465}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableTypes", "NullableTypes\NullableTypes.csproj", "{A80F1D52-B487-4EC9-9C19-A7610FBBADF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{93CE3986-CBA7-4A1D-BFE8-C6762014D465}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93CE3986-CBA7-4A1D-BFE8-C6762014D465}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93CE3986-CBA7-4A1D-BFE8-C6762014D465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80F1D52-B487-4EC9-9C19-A7610FBBADF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80F1D52-B487-4EC9-9C19-A7610FBBADF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80F1D52-B487-4EC9-9C19-A7610FBBADF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80F1D52-B487-4EC9-9C19-A7610FBBADF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
