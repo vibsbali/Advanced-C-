@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dynamics
 {
@@ -10,10 +6,11 @@ namespace Dynamics
     {
         static void Main(string[] args)
         {
-            
+            dynamic a = 1;
+            Console.WriteLine(a);
 
-
-
+            a = "Vaibhav";
+            Console.WriteLine(a);
         }
     }
 }
